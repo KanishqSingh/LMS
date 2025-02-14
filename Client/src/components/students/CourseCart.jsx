@@ -2,7 +2,9 @@ import React from 'react'
 
 const CourseCart = () => {
   return (
-    <div>CourseCart</div>
+    <div>
+      <img src={course.courseThumbnail} alt="" />
+    </div>
   )
 }
 
