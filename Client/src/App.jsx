@@ -12,6 +12,7 @@ import AddCoursePage from './pages/educator/AddCoursePage'
 import MyCourses from './pages/educator/MyCourses'
 import StudentEnrolled from './pages/educator/StudentEnrolled'
 import Navbar from './components/students/Navbar'
+import Footer from './components/students/Footer'
 
 const App = () => {
 
@@ -21,8 +22,8 @@ const App = () => {
       {!isEducatorPage && <Navbar></Navbar>}
       <Routes>
         <Route path = '/' element={<Home></Home>}></Route>
-        <Route path = '/courselist' element={<CoursesList></CoursesList>}></Route>
-        <Route path = '/courselist/:input' element={<CoursesList></CoursesList>}></Route>
+        <Route path = '/course-list' element={<CoursesList></CoursesList>}></Route>
+        <Route path = '/course-list/:input' element={<CoursesList></CoursesList>}></Route>
         <Route path = '/course/:id' element={<CourseDetails></CourseDetails>}></Route>
         <Route path = '/myenrollment' element={<MyEnrollments></MyEnrollments>}></Route>
         <Route path = '/player/:courseId' element={<Player></Player>}></Route>
@@ -36,7 +37,11 @@ const App = () => {
 
 
         </Route>
+       
       </Routes>
+
+      <Footer></Footer>
+      
     </div>
   )
 }
