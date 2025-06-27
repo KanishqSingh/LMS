@@ -3,7 +3,7 @@ import { assets } from '../../assets/assets';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white w-full mt-10">
+    <footer className="bg-gray-900 text-white w-full mt-10 sticky">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-12 border-b border-white/20">
         <div className="flex flex-col md:flex-row gap-12 md:gap-32 justify-between">
           
